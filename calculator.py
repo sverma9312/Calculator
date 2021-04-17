@@ -25,7 +25,7 @@ print("4.Divide")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4/0): ")
 
     # Check if choice is one of the four options
     if choice in ('1', '2', '3', '4'):
@@ -43,6 +43,11 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+
+        elif choice == '0':
+            print("exiting...")
+            break;
+
         break
     else:
         print("Invalid Input")
